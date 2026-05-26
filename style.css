@@ -1,0 +1,219 @@
+/* 1. Global Resets & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 2. Header & Navigation */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1b4332; /* Forest Green */
+}
+
+nav a {
+    margin-left: 20px;
+    font-weight: 500;
+    color: #4a5568;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1b4332;
+}
+
+.btn-nav {
+    background-color: #1b4332;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.btn-nav:hover {
+    background-color: #2d6a4f;
+    color: #ffffff;
+}
+
+/* 3. Hero Section */
+.hero {
+    background-color: #1b4332; 
+    background: linear-gradient(rgba(27, 67, 50, 0.85), rgba(27, 67, 50, 0.85)), 
+                url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: #d4a373; /* Wood Accent */
+    color: #1b4332;
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e9c46a;
+}
+
+.btn-secondary {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 26px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 4. About Section */
+.about {
+    padding: 80px 10%;
+    background-color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    color: #1b4332;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #4a5568;
+    font-size: 1.1rem;
+}
+
+.about-stats {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    gap: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 30px 20px;
+    border-left: 4px solid #d4a373;
+    border-radius: 0 6px 6px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.stat-box h3 {
+    color: #1b4332;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+/* 5. Services / Products Section */
+.services {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.2rem;
+    color: #1b4332;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    color: #1b4332;
+    margin-bottom: 15px;
+}
